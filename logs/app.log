@@ -1,0 +1,63 @@
+2021-01-31 05:25:30,238 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2021-01-31 05:25:30,240 INFO com.springdatajpa.JavaASpringDataJpaHw2Application [main] Starting JavaASpringDataJpaHw2Application using Java 11.0.9.1 on Xiaomi with PID 10892 (/home/ruslan/IdeaProjects/java/JavaA-spring-exeptionHandling-logging-hw-4/target/classes started by ruslan in /home/ruslan/IdeaProjects/java/JavaA-spring-exeptionHandling-logging-hw-4)
+2021-01-31 05:25:30,242 INFO com.springdatajpa.JavaASpringDataJpaHw2Application [main] No active profile set, falling back to default profiles: default
+2021-01-31 05:25:31,005 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-31 05:25:31,053 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-01-31 05:25:31,397 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 3030 (http)
+2021-01-31 05:25:31,403 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-3030"]
+2021-01-31 05:25:31,403 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-01-31 05:25:31,404 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-31 05:25:31,458 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-01-31 05:25:31,458 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1171 ms
+2021-01-31 05:25:31,553 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-31 05:25:31,576 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-31 05:25:31,634 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-31 05:25:31,686 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-31 05:25:31,940 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-31 05:25:31,950 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-01-31 05:25:32,367 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-31 05:25:32,374 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-31 05:25:32,764 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-31 05:25:32,864 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-31 05:25:33,005 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-3030"]
+2021-01-31 05:25:33,016 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 3030 (http) with context path ''
+2021-01-31 05:25:33,025 INFO com.springdatajpa.JavaASpringDataJpaHw2Application [main] Started JavaASpringDataJpaHw2Application in 3.063 seconds (JVM running for 3.92)
+2021-01-31 05:25:50,065 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-3030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-31 05:25:50,065 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-3030-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-01-31 05:25:50,066 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-3030-exec-1] Completed initialization in 1 ms
+2021-01-31 05:28:26,735 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-31 05:28:26,736 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-31 05:28:26,739 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-31 05:28:26,752 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-01-31 05:28:30,036 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2021-01-31 05:28:30,042 INFO com.springdatajpa.JavaASpringDataJpaHw2Application [main] Starting JavaASpringDataJpaHw2Application using Java 11.0.9.1 on Xiaomi with PID 11243 (/home/ruslan/IdeaProjects/java/JavaA-spring-exeptionHandling-logging-hw-4/target/classes started by ruslan in /home/ruslan/IdeaProjects/java/JavaA-spring-exeptionHandling-logging-hw-4)
+2021-01-31 05:28:30,043 INFO com.springdatajpa.JavaASpringDataJpaHw2Application [main] No active profile set, falling back to default profiles: default
+2021-01-31 05:28:30,574 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-31 05:28:30,605 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021-01-31 05:28:30,917 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 3030 (http)
+2021-01-31 05:28:30,923 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-3030"]
+2021-01-31 05:28:30,923 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-01-31 05:28:30,923 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-31 05:28:30,975 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-01-31 05:28:30,975 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 896 ms
+2021-01-31 05:28:31,071 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-31 05:28:31,093 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-31 05:28:31,148 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-31 05:28:31,196 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-31 05:28:31,435 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-31 05:28:31,445 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-01-31 05:28:31,770 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-31 05:28:31,774 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-31 05:28:32,012 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-31 05:28:32,081 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-31 05:28:32,217 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-3030"]
+2021-01-31 05:28:32,227 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 3030 (http) with context path ''
+2021-01-31 05:28:32,235 INFO com.springdatajpa.JavaASpringDataJpaHw2Application [main] Started JavaASpringDataJpaHw2Application in 2.443 seconds (JVM running for 3.023)
+2021-01-31 05:28:42,001 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-3030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-31 05:28:42,002 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-3030-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-01-31 05:28:42,003 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-3030-exec-1] Completed initialization in 1 ms
+2021-01-31 05:28:42,101 INFO com.springdatajpa.controller.ErrorController [http-nio-3030-exec-1] Validation failed for argument [0] in public com.springdatajpa.entyty.Movie com.springdatajpa.controller.MovieController.createMovie(com.springdatajpa.entyty.Movie): [Field error in object 'movie' on field 'title': rejected value [eandalorec]; codes [title-capital-letter.movie.title,title-capital-letter.title,title-capital-letter.java.lang.String,title-capital-letter]; arguments []; default message [Title should start with capital letter]] 
+2021-01-31 05:29:36,070 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-31 05:29:36,071 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-31 05:29:36,075 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-31 05:29:36,087 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
