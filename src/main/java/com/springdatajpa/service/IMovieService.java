@@ -1,16 +1,18 @@
 package com.springdatajpa.service;
 
+import com.springdatajpa.dto.MovieCreateDto;
+import com.springdatajpa.dto.MovieDto;
 import com.springdatajpa.entyty.Movie;
 
 import java.util.List;
 
 public interface IMovieService {
 
-    Movie createMovie(Movie movie);
+    MovieDto createMovie(MovieCreateDto movie);
 
-    List<Movie> getMovies();
+    List<MovieDto> getMovies();
 
-    Movie getMovieById(long id);
+    MovieDto getMovieById(long id);
 
     Movie updateMovie(long id, Movie movie);
 

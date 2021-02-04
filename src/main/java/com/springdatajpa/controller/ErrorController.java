@@ -1,5 +1,6 @@
 package com.springdatajpa.controller;
 
+import com.springdatajpa.dto.BadRequestException;
 import com.springdatajpa.dto.ResponseErrorDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -20,6 +21,12 @@ public class ErrorController {
         log.info(exception.getMessage());
         String message = parseValidationExeption(exception);
         return new ResponseErrorDto(HttpStatus.BAD_REQUEST.value(), LocalDateTime.now(), message );
+    }
+
+    @ExceptionHandler(value = BadRequestException.class)
+    public ResponseErrorDto handleBadRequestException(BadRequestException exception) {
+        log.info("Handled BadRequestException: {}", exception.getMessage());
+        return new ResponseErrorDto(HttpStatus.BAD_REQUEST.value(), LocalDateTime.now(), exception.getMessage());
     }
 
     private String parseValidationExeption(MethodArgumentNotValidException exception) {

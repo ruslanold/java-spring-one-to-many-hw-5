@@ -1,15 +1,12 @@
 package com.springdatajpa.entyty;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.springdatajpa.validator.UniqueMovieTitle;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
@@ -31,4 +28,11 @@ public class Movie {
     @Positive
     @Max(value = 200, message = "Duration should not exceed 200")
     private int duration;
+
+    @ManyToOne(targetEntity = Director.class, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private Director director;
+//
+//    @ManyToOne(targetEntity = Director.class)
+//    private Director directorRewarded;
 }

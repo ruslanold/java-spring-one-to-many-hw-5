@@ -1,38 +1,45 @@
 package com.springdatajpa.service;
 
 import com.springdatajpa.dao.MovieRepository;
+import com.springdatajpa.dto.MovieCreateDto;
+import com.springdatajpa.dto.MovieDto;
 import com.springdatajpa.entyty.Movie;
-import org.apache.commons.lang3.CharUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class MovieService implements IMovieService {
 
     private MovieRepository movieRepository;
+    private IDirectorService directorService;
 
     @Autowired
-    public MovieService(MovieRepository movieRepository) {
+    public MovieService(MovieRepository movieRepository, IDirectorService directorService) {
         this.movieRepository = movieRepository;
+        this.directorService = directorService;
     }
 
     @Override
-    public Movie createMovie(Movie movie) {
-        return movieRepository.saveAndFlush(movie);
+    public MovieDto createMovie(MovieCreateDto movie) {
+        Movie movieEntyty = new Movie();
+        movieEntyty.setTitle(movie.getTitle());
+        movieEntyty.setGenre(movie.getGenre());
+        movieEntyty.setDuration(movie.getDuration());
+        movieEntyty.setDirector(directorService.getDirectorById(movie.getDirectorId()));
+        return convertToMovieDto(movieRepository.saveAndFlush(movieEntyty));
     }
 
     @Override
-    public List<Movie> getMovies() {
-        return movieRepository.findAll();
+    public List<MovieDto> getMovies() {
+        return movieRepository.findAll().stream().map((movie) -> convertToMovieDto(movie)).collect(Collectors.toList());
     }
 
     @Override
-    public Movie getMovieById(long id) {
-        return movieRepository.getOne(id);
+    public MovieDto getMovieById(long id) {
+        return convertToMovieDto(movieRepository.getOne(id));
     }
 
     @Override
@@ -50,5 +57,9 @@ public class MovieService implements IMovieService {
             throw new IllegalArgumentException("No movie with such id: " + id);
         }
         movieRepository.deleteById(id);
+    }
+
+    private MovieDto convertToMovieDto(Movie movie){
+        return new MovieDto(movie.getId(), movie.getTitle(), movie.getGenre(), movie.getDuration(), movie.getDirector().getName());
     }
 }

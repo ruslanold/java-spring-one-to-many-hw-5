@@ -1,5 +1,7 @@
 package com.springdatajpa.controller;
 
+import com.springdatajpa.dto.MovieCreateDto;
+import com.springdatajpa.dto.MovieDto;
 import com.springdatajpa.entyty.Movie;
 import com.springdatajpa.service.IMovieService;
 import com.springdatajpa.validator.MovieValidator;
@@ -22,18 +24,18 @@ public class MovieController {
     //private static Logger Logger = LoggerFactory.getLogger(MovieController.class);
 
     @GetMapping()
-    public List<Movie> getMovies(){
+    public List<MovieDto> getMovies(){
         return movieService.getMovies();
     }
 
     @GetMapping(value = "/{id}")
-    public Movie getMovie(@PathVariable long id){
+    public MovieDto getMovie(@PathVariable long id){
         return movieService.getMovieById(id);
     }
 
     @PostMapping()
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Movie createMovie(@RequestBody @Valid Movie movie){
+    public MovieDto createMovie(@RequestBody @Valid MovieCreateDto movie){
         log.info("Handled POST request with body: {}", movie);
         return movieService.createMovie(movie);
     }
